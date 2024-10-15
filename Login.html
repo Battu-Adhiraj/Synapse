@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar and Login Page Example</title>
+  <style>
+    /* Navigation Bar Styles */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 0 20px;
+      height: 60px; /* Adjust the height as needed */
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 40px; /* Adjust the height as needed */
+      margin-right: 10px;
+    }
+
+    .company-name {
+      color: white;
+      font-size: 20px; /* Adjust the font size as needed */
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background-color: #111;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav ul li {
+        margin: 0;
+      }
+
+      nav ul li a {
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    /* Login Page Styles */
+    .login-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .login-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(0, 128, 128);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background-color: rgb(167, 199, 231);
+    }
+    body {
+      
+    background-image: url('Background.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover; /* Ensures the image covers the whole background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+
+    }
+      /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo-container">
+      <img src="logo.png" alt="Company Logo">
+      <span class="company-name">Synapse</span>
+    </div>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="sign_up.html">SignUp</a></li>
+    </ul>
+  </nav>
+
+  <!-- Login Page -->
+  <div class="login-container">
+    <h1>Welcome Back!</h1>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <center>
+<a href="Community.html">Login</a>
+      <p>Don't have an account ? <a href="sign_up.html">create an account here</a>.</p>
+    </center>
+    </form>
+  </div>
+  <footer>
+    <p>© 2024 Synapse. All rights reserved.</p>
+    <p><a href="#contact">Contact Us</a> | <a href="#about">About Us</a></p>
+  </footer>
+</body>
+</html>

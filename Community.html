@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style3.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Discover Communities</title>
+    
+
+
+<body>
+    <nav class="sidebar close">
+         <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="synapse.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Synapse</span>
+                    <span class="profession">Community Page</span>
+                </div>  
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+         </header>
+         <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    
+                    <i class='bx bx-search' ></i>
+                        <input type="search" placeholder="Search...">
+                    </li>    
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt'></i>
+                            <span class="text nav">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell'></i>
+                            <span class="text nav">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-male'></i>
+                            <span class="text nav">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-comment-dots' ></i>
+                            <span class="text nav">Feed</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt'></i>
+                            <span class="text nav">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-exit'></i>
+                            <span class="text nav">Logout</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+         </div>
+    </nav>
+    <script src="script1.js"></script>        
+
+
+
+    <center>
+        <link rel="stylesheet" href="join.css">
+    </head>
+    <header>
+        <input type="text" id="searchBar" placeholder="Search for communities..." onkeyup="searchCommunities()">
+    </header>
+
+    <table>
+        <tr>
+    <section id="communitySection">
+        <div class="community-card" data-name="Tech Enthusiasts">
+            <h2>Tech Enthusiasts</h2>
+            <p>Passionate about the latest tech trends, gadgets, and AI!</p>
+            <p>Members: 150 | Posts: 230</p>
+            <a href="communitypage.html"><button onclick="joinCommunity('Tech Enthusiasts')">Join</button></a>
+        </div>
+    </tr>
+        <div class="community-card" data-name="Book Lovers">
+            <h2>Book Lovers</h2>
+            <p>A haven for readers to discuss their favorite books and authors.</p>
+            <p>Members: 120 | Posts: 180</p>
+            <button onclick="joinCommunity('Book Lovers')">Join</button>
+        </div>
+
+        <div class="community-card" data-name="Fitness Freaks">
+            <h2>Fitness Freaks</h2>
+            <p>A community focused on fitness, healthy eating, and workouts.</p>
+            <p>Members: 90 | Posts: 95</p>
+            <button onclick="joinCommunity('Fitness Freaks')">Join</button>
+        </div>
+
+        <div class="community-card" data-name="Art Aficionados">
+            <h2>Art Aficionados</h2>
+            <p>Share and appreciate art, whether it's painting, sculpture, or digital!</p>
+            <p>Members: 70 | Posts: 110</p>
+            <button onclick="joinCommunity('Art Aficionados')">Join</button>
+        </div>
+
+        <div class="community-card" data-name="Travel Geeks">
+            <h2>Travel Geeks</h2>
+            <p>For those who have a wanderlust spirit and love exploring new places!</p>
+            <p>Members: 80 | Posts: 140</p>
+            <button onclick="joinCommunity('Travel Geeks')">Join</button>
+        </div>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+     <center>
+    <footer>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Synapse | All rights reserved</p>
+        </div>
+    </center>
+    </footer>
+</center>
+    <script src="back.js"></script>
+</body>
+</html>
+
+
